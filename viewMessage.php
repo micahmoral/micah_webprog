@@ -24,6 +24,9 @@
 		<td><?=$list['is_approved'];?></td>
 		<td><b><a href = 'reject.php?id='.$list['id']."'">Reject</a>
 		<td><b><a href = 'approve.php?id='.$list['id']."'">Approved</a>
+		<form action = "delete.php?id=<?=$list['id']?>" method = "POST">
+			<input type = "submit" value = "Delete">
+</form>
 	</tr>
 
 <?php endforeach; ?>
